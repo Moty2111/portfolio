@@ -460,13 +460,14 @@
   $("#modal-prev").addEventListener("click", () => stepModal(-1));
   $("#modal-next").addEventListener("click", () => stepModal(1));
 
-  $("#modal-media").addEventListener("click", (event) => {
+  // галерея вставляется ПОСЛЕ #modal-media, поэтому слушаем на всей модалке
+  modal.addEventListener("click", (event) => {
     const shot = event.target.closest("[data-shot]");
     if (!shot) return;
     const src = shot.dataset.shot;
     const main = $("#modal-main-img");
     if (main) main.src = src;
-    $$("[data-shot]").forEach((b) => b.setAttribute("aria-pressed", String(b === shot)));
+    $$("[data-shot]", modal).forEach((b) => b.setAttribute("aria-pressed", String(b === shot)));
   });
 
   // focus trap inside dialog
