@@ -137,15 +137,21 @@
     return "";
   }
 
+  function thumbOf(src) {
+    return src.startsWith("assets/shots/") ? src.replace("assets/shots/", "assets/thumbs/") : src;
+  }
+
   function mediaHTML(p) {
     const label = esc(txt(p).title);
     if (p.image && p.phone) {
-      return `<span class="phone-bg" style="background-image:url('${esc(p.image)}')"></span>
-        <span class="phone-frame"><img src="${esc(p.image)}" alt="" loading="lazy" /></span>
+      const t = thumbOf(p.image);
+      return `<span class="phone-bg" style="background-image:url('${esc(t)}')"></span>
+        <span class="phone-frame"><img src="${esc(t)}" alt="" loading="lazy" decoding="async" /></span>
         <span class="phone-notch"></span>`;
     }
     if (p.image) {
-      return `<img src="${esc(p.image)}" alt="Превью проекта ${label}" loading="lazy" />`;
+      const t = thumbOf(p.image);
+      return `<img src="${esc(t)}" alt="Превью проекта ${label}" loading="lazy" decoding="async" />`;
     }
     return artHTML(p.art);
   }
