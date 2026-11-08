@@ -289,16 +289,26 @@ ul, ol { padding: 0; list-style: none; }
 [data-theme="light"] .theme-toggle .icon-sun { display: block; }
 [data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
-.menu-toggle { display: none; flex-direction: column; gap: 5px; }
-.menu-toggle span {
-  display: block;
-  width: 16px; height: 1.6px;
-  border-radius: 2px;
-  background: currentColor;
-  transition: transform 0.28s var(--ease), opacity 0.2s;
+.menu-toggle {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
 }
-.nav-open .menu-toggle span:first-child { transform: translateY(3.3px) rotate(45deg); }
-.nav-open .menu-toggle span:last-child { transform: translateY(-3.3px) rotate(-45deg); }
+.menu-toggle span {
+  position: absolute;
+  width: 18px; height: 2px;
+  border-radius: 99px;
+  background: currentColor;
+  transition: transform 0.3s var(--ease), opacity 0.2s;
+}
+.menu-toggle span:nth-child(1) { transform: translateY(-6px); }
+.menu-toggle span:nth-child(2) { transform: translateY(0); }
+.menu-toggle span:nth-child(3) { transform: translateY(6px); }
+.nav-open .menu-toggle span:nth-child(1) { transform: translateY(0) rotate(45deg); }
+.nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
+.nav-open .menu-toggle span:nth-child(3) { transform: translateY(0) rotate(-45deg); }
 
 /* ---------- buttons ---------- */
 .btn {
@@ -1513,6 +1523,37 @@ ul, ol { padding: 0; list-style: none; }
   .footer-inner { justify-content: flex-start; }
   .footer-note { order: 3; }
   .principles ul { grid-template-columns: 1fr; }
+
+  /* мобильный хедер: компактнее и удобнее под палец */
+  .header-inner { gap: 12px; }
+  .brand { gap: 8px; }
+  .brand-sub { display: none; }
+  .brand-mark { width: 34px; height: 34px; border-radius: 11px; font-size: 16px; }
+  .header-actions { gap: 6px; }
+  .icon-btn { width: 40px; height: 40px; }
+  .lang-switch button { padding: 5px 8px; min-width: 32px; }
+
+  /* фильтры листаются по горизонтали, а не переносятся */
+  .filters { flex-wrap: nowrap; overflow-x: auto; margin: 0 -6px; padding: 0 6px 6px; scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filter-chip { flex: 0 0 auto; }
+
+  /* появление карточек — быстрее и короче на мобильных */
+  .reveal { transform: translateY(12px); transition-duration: 0.45s; }
+  .card.reveal { transition-delay: min(var(--d, 0s), 120ms); }
+
+  /* модалка как нижняя шторка */
+  .modal { padding: 0; }
+  .modal-panel {
+    align-self: end;
+    width: 100%;
+    max-height: 92svh;
+    border-radius: 24px 24px 0 0;
+    animation-name: sheet;
+  }
+  @keyframes sheet { from { transform: translateY(40px); opacity: 0.6; } }
+  .modal-close { top: 12px; right: 12px; }
+  .modal-body { padding: 20px 18px 28px; }
 }
 
 @media (max-width: 520px) {

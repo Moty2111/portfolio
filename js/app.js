@@ -263,9 +263,33 @@
 
   function observeReveals() {
     $$(".reveal:not(.is-in)").forEach((el) => {
-      if (revealObserver) revealObserver.observe(el);
-      else el.classList.add("is-in");
+      if (!revealObserver) { el.classList.add("is-in"); return; }
+      // не ждём IntersectionObserver для уже видимых блоков — показываем сразу
+      const r = el.getBoundingClientRect();
+      if (r.top < innerHeight && r.bottom > 0) { el.classList.add("is-in"); return; }
+      revealObserver.observe(el);
     });
+    scheduleRevealScroll();
+  }
+
+  // страховка для мобильных/WebView: раскрываем блоки и по скроллу
+  let revealOnScroll = null;
+  function scheduleRevealScroll() {
+    if (revealOnScroll) return;
+    revealOnScroll = () => {
+      const pending = $$(".reveal:not(.is-in)");
+      if (!pending.length) { window.removeEventListener("scroll", revealOnScroll); revealOnScroll = null; return; }
+      let hit = false;
+      pending.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.top < innerHeight && r.bottom > 0) { el.classList.add("is-in"); hit = true; }
+      });
+      if (hit && !$$(".reveal:not(.is-in)").length) {
+        window.removeEventListener("scroll", revealOnScroll);
+        revealOnScroll = null;
+      }
+    };
+    window.addEventListener("scroll", revealOnScroll, { passive: true });
   }
 
   /* ---------------- modal ---------------- */
