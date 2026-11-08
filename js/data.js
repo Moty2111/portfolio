@@ -206,7 +206,8 @@ const PROJECTS = [
     tags: ["React", "TypeScript", "ASP.NET Core", "EF Core", "SQL Server"],
     repo: "https://github.com/Moty2111/VolunteerSystem",
     demo: null,
-    art: "dashboard",
+    image: "assets/shots/volunteersystem-home.jpg",
+    gallery: ["assets/shots/volunteersystem-home.jpg", "assets/shots/volunteersystem-login.jpg"],
     ru: {
       title: "Система учёта волонтёров",
       subtitle: "Fullstack-платформа для волонтёрских организаций",
@@ -369,7 +370,8 @@ const PROJECTS = [
     tags: ["React Native", "Expo", "GitHub Actions"],
     repo: "https://github.com/Moty2111/MazeGame",
     demo: null,
-    art: "maze",
+    image: "assets/shots/mazegame-menu.jpg",
+    gallery: ["assets/shots/mazegame-menu.jpg"],
     ru: {
       title: "MazeGame",
       subtitle: "Лабиринт в кармане",
@@ -401,7 +403,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript"],
     repo: "https://github.com/Moty2111/Bogdan",
     demo: "https://moty2111.github.io/Bogdan/",
-    art: "gift",
+    image: "assets/shots/bogdan-live.jpg",
+    gallery: ["assets/shots/bogdan-live.jpg", "assets/shots/bogdan-card.jpg"],
     ru: {
       title: "Открытка для Богдана",
       subtitle: "Подарок, который нужно открыть",
