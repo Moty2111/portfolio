@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольный мир - Главная</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">  
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип Футбольный мир">
+                <h1>Футбольный мир</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tournaments.html">Турниры</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-container">
+        <aside class="sidebar">
+            <h3>Меню</h3>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Последние новости</a></li>
+                    <li><a href="tournaments.html">Ближайшие матчи</a></li>
+                    <li><a href="teams.html">Топ команды</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-widget">
+                <h3>Ближайшие матчи</h3>
+                <div class="match">
+                    <div class="teams">
+                        <span>Реал Мадрид</span>
+                        <span>Бавария</span>
+                    </div>
+                    <div class="match-info">
+                        <span>Лига чемпионов</span>
+                        <span>20.10.2023 21:45</span>
+                    </div>
+                </div>
+                <div class="match">
+                    <div class="teams">
+                        <span>Манчестер Юнайтед</span>
+                        <span>Ливерпуль</span>
+                    </div>
+                    <div class="match-info">
+                        <span>АПЛ</span>
+                        <span>22.10.2023 18:30</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Добро пожаловать в мир футбола!</h2>
+                    <p>Самые свежие новости, результаты матчей, турнирные таблицы и многое другое.</p>
+                    <a href="news.html" class="btn">Читать новости</a>
+                </div>
+            </section>
+
+            <section class="latest-news">
+                <h2><span>Последние новости</span></h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/stadium.jpg" alt="Новый стадион для ЧМ-2026">
+                            <div class="news-category">Чемпионат мира</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Чемпионат мира 2026: новые стадионы</h3>
+                            <p class="meta">15 октября 2023</p>
+                            <p>Организаторы чемпионата мира 2026 представили новые стадионы, которые примут матчи турнира.</p>
+                            <a href="news.html#world-cup-2026" class="read-more">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/player.jpg" alt="Футболист">
+                            <div class="news-category">Трансферы</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Трансферные слухи: кто куда переходит</h3>
+                            <p class="meta">12 октября 2023</p>
+                            <p>Обзор самых громких трансферных слухов текущего трансферного окна.</p>
+                            <a href="news.html#transfers" class="read-more">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/champions-league.jpg" alt="Лига чемпионов">
+                            <div class="news-category">Лига чемпионов</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Результаты последнего тура Лиги чемпионов</h3>
+                            <p class="meta">10 октября 2023</p>
+                            <p>Обзор всех матчей второго тура группового этапа Лиги чемпионов УЕФА.</p>
+                            <a href="news.html#champions-league" class="read-more">Читать далее</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/stadium.jpg" alt="Новый стадион для ЧМ-2026">
+                            <div class="news-category">Чемпионат мира</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Чемпионат мира 2026: новые стадионы</h3>
+                            <p class="meta">15 октября 2023</p>
+                            <p>Организаторы чемпионата мира 2026 представили новые стадионы, которые примут матчи турнира.</p>
+                            <a href="news.html#world-cup-2026" class="read-more">Читать далее</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Футбольный мир - ваш источник последних новостей, статистики и аналитики мирового футбола.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tournaments.html">Турниры</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@footballworld.ru</li>
+                    <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                    <li><i class="fas fa-map-marker-alt"></i> ул. Спортивная, 123, Москва</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Подписка на новости</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Футбольный мир. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

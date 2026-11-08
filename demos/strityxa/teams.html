@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольный мир - Команды</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">  
+    <link rel="stylesheet" href="css/sidebar.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип Футбольный мир">
+                <h1>Футбольный мир</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tournaments.html">Турниры</a></li>
+                    <li class="active"><a href="teams.html">Команды</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-container">
+        <aside class="sidebar">
+            <h3>Меню</h3>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Последние новости</a></li>
+                    <li><a href="tournaments.html">Ближайшие матчи</a></li>
+                    <li class="active"><a href="teams.html">Топ команды</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-widget">
+                <h3>Рейтинг команд</h3>
+                <div class="team-ranking">
+                    <div class="team-rank">
+                        <span>1</span>
+                        <span>Манчестер Сити</span>
+                        <span>Англия</span>
+                    </div>
+                    <div class="team-rank">
+                        <span>2</span>
+                        <span>Бавария</span>
+                        <span>Германия</span>
+                    </div>
+                    <div class="team-rank">
+                        <span>3</span>
+                        <span>Реал Мадрид</span>
+                        <span>Испания</span>
+                    </div>
+                    <div class="team-rank">
+                        <span>4</span>
+                        <span>Ливерпуль</span>
+                        <span>Англия</span>
+                    </div>
+                    <div class="team-rank">
+                        <span>5</span>
+                        <span>ПСЖ</span>
+                        <span>Франция</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="teams-section">
+                <h2><span>Лучшие футбольные команды</span></h2>
+                
+                <div class="team-filters">
+                    <div class="filter-group">
+                        <label for="country">Страна:</label>
+                        <select id="country">
+                            <option value="all">Все</option>
+                            <option value="england">Англия</option>
+                            <option value="spain">Испания</option>
+                            <option value="germany">Германия</option>
+                            <option value="italy">Италия</option>
+                            <option value="france">Франция</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="tournament">Турнир:</label>
+                        <select id="tournament">
+                            <option value="all">Все</option>
+                            <option value="ucl">Лига чемпионов</option>
+                            <option value="epl">Английская ПЛ</option>
+                            <option value="laliga">Ла Лига</option>
+                            <option value="bundesliga">Бундеслига</option>
+                        </select>
+                    </div>
+                    <button class="btn">Применить</button>
+                </div>
+                
+                <div class="teams-grid">
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="images/real-madrid.jpg" alt="Реал Мадрид">
+                        </div>
+                        <div class="team-info">
+                            <h3>Реал Мадрид</h3>
+                            <div class="team-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Испания</span>
+                                <span><i class="fas fa-trophy"></i> 14 Лиг чемпионов</span>
+                            </div>
+                            <p>Один из самых титулованных клубов мира. Домашний стадион - Сантьяго Бернабеу.</p>
+                            <div class="team-stats">
+                                <div>
+                                    <span>Главный тренер:</span>
+                                    <span>Карло Анчелотти</span>
+                                </div>
+                                <div>
+                                    <span>Капитан:</span>
+                                    <span>Начо</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-actions">
+                            <a href="#" class="btn">Подробнее</a>
+                            <a href="#" class="btn">Матчи</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="images/barcelona.jpg" alt="Барселона">
+                        </div>
+                        <div class="team-info">
+                            <h3>Барселона</h3>
+                            <div class="team-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Испания</span>
+                                <span><i class="fas fa-trophy"></i> 5 Лиг чемпионов</span>
+                            </div>
+                            <p>Легендарный клуб с уникальным стилем игры. Домашний стадион - Камп Ноу.</p>
+                            <div class="team-stats">
+                                <div>
+                                    <span>Главный тренер:</span>
+                                    <span>Хави</span>
+                                </div>
+                                <div>
+                                    <span>Капитан:</span>
+                                    <span>Серхио Бускетс</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-actions">
+                            <a href="#" class="btn">Подробнее</a>
+                            <a href="#" class="btn">Матчи</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="images/man-city.jpg" alt="Манчестер Сити">
+                        </div>
+                        <div class="team-info">
+                            <h3>Манчестер Сити</h3>
+                            <div class="team-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Англия</span>
+                                <span><i class="fas fa-trophy"></i> 1 Лига чемпионов</span>
+                            </div>
+                            <p>Действующий победитель Лиги чемпионов. Домашний стадион - Этихад.</p>
+                            <div class="team-stats">
+                                <div>
+                                    <span>Главный тренер:</span>
+                                    <span>Пеп Гвардиола</span>
+                                </div>
+                                <div>
+                                    <span>Капитан:</span>
+                                    <span>Кевин Де Брюйне</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-actions">
+                            <a href="#" class="btn">Подробнее</a>
+                            <a href="#" class="btn">Матчи</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="images/bayern.jpg" alt="Бавария">
+                        </div>
+                        <div class="team-info">
+                            <h3>Бавария Мюнхен</h3>
+                            <div class="team-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Германия</span>
+                                <span><i class="fas fa-trophy"></i> 6 Лиг чемпионов</span>
+                            </div>
+                            <p>Самый титулованный клуб Германии. Домашний стадион - Альянц Арена.</p>
+                            <div class="team-stats">
+                                <div>
+                                    <span>Главный тренер:</span>
+                                    <span>Томас Тухель</span>
+                                </div>
+                                <div>
+                                    <span>Капитан:</span>
+                                    <span>Мануэль Нойер</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-actions">
+                            <a href="#" class="btn">Подробнее</a>
+                            <a href="#" class="btn">Матчи</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Футбольный мир - ваш источник последних новостей, статистики и аналитики мирового футбола.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tournaments.html">Турниры</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@footballworld.ru</li>
+                    <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                    <li><i class="fas fa-map-marker-alt"></i> ул. Спортивная, 123, Москва</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Подписка на новости</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Футбольный мир. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

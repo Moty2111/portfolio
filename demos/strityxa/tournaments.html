@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольный мир - Турниры</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">  
+    <link rel="stylesheet" href="css/sidebar.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип Футбольный мир">
+                <h1>Футбольный мир</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li class="active"><a href="tournaments.html">Турниры</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-container">
+        <aside class="sidebar">
+            <h3>Меню</h3>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Последние новости</a></li>
+                    <li class="active"><a href="tournaments.html">Ближайшие матчи</a></li>
+                    <li><a href="teams.html">Топ команды</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-widget">
+                <h3>Турниры</h3>
+                <div class="tournaments-list">
+                    <a href="#">Лига чемпионов УЕФА</a>
+                    <a href="#">Лига Европы УЕФА</a>
+                    <a href="#">Английская Премьер-лига</a>
+                    <a href="#">Ла Лига (Испания)</a>
+                    <a href="#">Серия А (Италия)</a>
+                    <a href="#">Бундеслига (Германия)</a>
+                    <a href="#">Чемпионат мира 2026</a>
+                    <a href="#">Лига наций УЕФА</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="tournaments-section">
+                <h2><span>Футбольные турниры</span></h2>
+                
+                <div class="tournament-cards">
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <img src="images/champions-league.jpg" alt="Лига чемпионов">
+                            <h3>Лига чемпионов УЕФА</h3>
+                        </div>
+                        <div class="tournament-body">
+                            <p>Главный клубный турнир Европы. В сезоне 2023/2024 участвуют 32 команды из разных стран.</p>
+                            <div class="tournament-info">
+                                <div>
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Действующий чемпион: Манчестер Сити</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Дата финала: 1 июня 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tournament-footer">
+                            <a href="#" class="btn">Турнирная таблица</a>
+                            <a href="#" class="btn">Расписание матчей</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <img src="images/world-cup.jpg" alt="Чемпионат мира">
+                            <h3>Чемпионат мира 2026</h3>
+                        </div>
+                        <div class="tournament-body">
+                            <p>48 команд будут бороться за титул чемпиона мира в США, Канаде и Мексике.</p>
+                            <div class="tournament-info">
+                                <div>
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Действующий чемпион: Аргентина</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Дата начала: 11 июня 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tournament-footer">
+                            <a href="#" class="btn">Группы</a>
+                            <a href="#" class="btn">Стадионы</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <img src="images/premier-league.jpg" alt="Премьер-лига">
+                            <h3>Английская Премьер-лига</h3>
+                        </div>
+                        <div class="tournament-body">
+                            <p>Один из самых популярных футбольных чемпионатов мира с участием 20 клубов.</p>
+                            <div class="tournament-info">
+                                <div>
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Действующий чемпион: Манчестер Сити</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Сезон: 2023/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tournament-footer">
+                            <a href="#" class="btn">Турнирная таблица</a>
+                            <a href="#" class="btn">Бомбардиры</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upcoming-matches">
+                    <h3><span>Ближайшие матчи</span></h3>
+                    <div class="matches-table">
+                        <div class="match-row">
+                            <div class="match-date">
+                                <span>20.10.2023</span>
+                                <span>21:45</span>
+                            </div>
+                            <div class="match-teams">
+                                <span>Реал Мадрид</span>
+                                <span>Бавария</span>
+                            </div>
+                            <div class="match-tournament">
+                                <span>Лига чемпионов</span>
+                            </div>
+                            <div class="match-actions">
+                                <a href="#" class="btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                        
+                        <div class="match-row">
+                            <div class="match-date">
+                                <span>22.10.2023</span>
+                                <span>18:30</span>
+                            </div>
+                            <div class="match-teams">
+                                <span>Манчестер Юнайтед</span>
+                                <span>Ливерпуль</span>
+                            </div>
+                            <div class="match-tournament">
+                                <span>АПЛ</span>
+                            </div>
+                            <div class="match-actions">
+                                <a href="#" class="btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                        
+                        <div class="match-row">
+                            <div class="match-date">
+                                <span>23.10.2023</span>
+                                <span>20:00</span>
+                            </div>
+                            <div class="match-teams">
+                                <span>Барселона</span>
+                                <span>Реал Мадрид</span>
+                            </div>
+                            <div class="match-tournament">
+                                <span>Ла Лига</span>
+                            </div>
+                            <div class="match-actions">
+                                <a href="#" class="btn-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Футбольный мир - ваш источник последних новостей, статистики и аналитики мирового футбола.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tournaments.html">Турниры</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@footballworld.ru</li>
+                    <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                    <li><i class="fas fa-map-marker-alt"></i> ул. Спортивная, 123, Москва</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Подписка на новости</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Футбольный мир. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

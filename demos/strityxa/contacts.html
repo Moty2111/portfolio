@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольный мир - Контакты</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">  
+    <link rel="stylesheet" href="css/sidebar.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип Футбольный мир">
+                <h1>Футбольный мир</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tournaments.html">Турниры</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li class="active"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-container">
+        <aside class="sidebar">
+            <h3>Меню</h3>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Последние новости</a></li>
+                    <li><a href="tournaments.html">Ближайшие матчи</a></li>
+                    <li><a href="teams.html">Топ команды</a></li>
+                    <li class="active"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-widget">
+                <h3>Контактная информация</h3>
+                <div class="contact-sidebar">
+                    <p><i class="fas fa-map-marker-alt"></i> ул. Спортивная, 123, Москва</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@footballworld.ru</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="contacts-section">
+                <h2><span>Свяжитесь с нами</span></h2>
+                
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Адрес</h3>
+                        <p>ул. Спортивная, 123, Москва, Россия</p>
+                        <a href="#" class="btn-small">На карте</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Телефон</h3>
+                        <p>+7 (495) 123-45-67</p>
+                        <a href="tel:+74951234567" class="btn-small">Позвонить</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@footballworld.ru</p>
+                        <a href="mailto:info@footballworld.ru" class="btn-small">Написать</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3><span>Форма обратной связи</span></h3>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваш Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема сообщения</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn">Отправить сообщение</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="map-container">
+                    <h3><span>Мы на карте</span></h3>
+                    <div class="map">
+                        <!-- Здесь будет карта -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789135139!2d37.61842331593095!3d55.753700980553136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdC40LbQsNGA0LjRjywgMTIzLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTAxMDAw!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>Футбольный мир - ваш источник последних новостей, статистики и аналитики мирового футбола.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tournaments.html">Турниры</a></li>
+                    <li><a href="teams.html">Команды</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> info@footballworld.ru</li>
+                    <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                    <li><i class="fas fa-map-marker-alt"></i> ул. Спортивная, 123, Москва</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Подписка на новости</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Футбольный мир. Все права защищены.</p>
+            </div>
+        </div>    </footer>
+</body>
+</html>

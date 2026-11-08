@@ -1,0 +1,216 @@
+/* Шапка */
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.logo img:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.logo h1 {
+    color: var(--white);
+    font-size: 29px;
+    margin: 0;
+    background: linear-gradient(to right, var(--white) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    color: var(--white);
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.main-nav .active a {
+    color: var(--secondary-color);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.mobile-menu-btn {
+    display: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Футер */
+footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #003366 100%);
+    color: var(--white);
+    padding: 50px 0 30px;
+    margin-top: 50px;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.footer-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--white);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-section a:hover {
+    color: var(--secondary-color);
+    padding-left: 5px;
+}
+
+.footer-section a i {
+    width: 20px;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subscribe-form input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.subscribe-form button {
+    background: var(--secondary-color);
+    color: var(--primary-dark);
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background: #ffcc00;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    grid-column: 1 / -1;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}

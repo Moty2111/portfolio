@@ -1,0 +1,123 @@
+/* Боковая панель */
+.sidebar {
+    background: linear-gradient(135deg, var(--white) 0%, #f0f8ff 100%);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+}
+
+.sidebar h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(0, 91, 170, 0.05) 0%, rgba(0, 91, 170, 0) 100%);
+}
+
+.sidebar-nav a:hover {
+    background: linear-gradient(135deg, rgba(0, 91, 170, 0.1) 0%, rgba(0, 91, 170, 0.05) 100%);
+    transform: translateX(5px);
+}
+
+.sidebar-nav .active a {
+    background: linear-gradient(135deg, rgba(0, 91, 170, 0.15) 0%, rgba(0, 91, 170, 0.1) 100%);
+    font-weight: bold;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.sidebar-widget {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--medium-gray);
+}
+
+.sidebar-widget h3 {
+    font-size: 18px;
+}
+
+.top-news {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-news a {
+    color: var(--text-color);
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--medium-gray);
+}
+
+.top-news a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.match {
+    background: rgba(0, 91, 170, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.match .teams {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.match .match-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+.team-ranking {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.team-rank {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--medium-gray);
+}
+
+.team-rank span:first-child {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact-sidebar p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-sidebar i {
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+}
