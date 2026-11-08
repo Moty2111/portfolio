@@ -274,7 +274,7 @@ const PROJECTS = [
     demo: null,
     image: "assets/shots/flowers-flower_dark.jpg",
     phone: true,
-    gallery: ["assets/shots/flowers-flower_dark.jpg", "assets/shots/flowers-horoscope.jpg", "assets/shots/flowers-tarot.jpg", "assets/shots/flowers-friends.jpg"],
+    gallery: ["assets/shots/flowers-flower_dark.jpg", "assets/shots/flower.jpg", "assets/shots/flowers-horoscope.jpg", "assets/shots/flowers-tarot.jpg", "assets/shots/flowers-friends.jpg", "assets/shots/welcome.jpg", "assets/shots/settings.jpg"],
     ru: {
       title: "Цветочек",
       subtitle: "Мобильное приложение с характером",
@@ -306,7 +306,8 @@ const PROJECTS = [
     tags: ["C#", "ASP.NET Core", "Razor Pages", "SQL"],
     repo: "https://github.com/Moty2111/Monopolist",
     demo: "https://moty2111.github.io/Monopolist/",
-    image: "assets/shots/monopolist-card.jpg",
+    image: "assets/shots/monopolist-main.jpg",
+    gallery: ["assets/shots/monopolist-main.jpg", "assets/shots/monopolist-card.jpg"],
     ru: {
       title: "Моноплист",
       subtitle: "Управление строительным магазином",
@@ -338,7 +339,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript", "Three.js"],
     repo: "https://github.com/Moty2111/Katuysha",
     demo: "https://moty2111.github.io/Katuysha/",
-    image: "assets/shots/katuysha-inside.jpg",
+    image: "assets/shots/katuysha-main.jpg",
+    gallery: ["assets/shots/katuysha-main.jpg", "assets/shots/katuysha-inside.jpg", "assets/shots/katuysha-card.jpg"],
     ru: {
       title: "С днём рождения, Катя",
       subtitle: "Открытка с 3D-тортом и играми",
@@ -403,8 +405,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript"],
     repo: "https://github.com/Moty2111/Bogdan",
     demo: "https://moty2111.github.io/Bogdan/",
-    image: "assets/shots/bogdan-live.jpg",
-    gallery: ["assets/shots/bogdan-live.jpg", "assets/shots/bogdan-card.jpg"],
+    image: "assets/shots/bogdan-main.jpg",
+    gallery: ["assets/shots/bogdan-main.jpg", "assets/shots/bogdan-live.jpg", "assets/shots/bogdan-card.jpg"],
     ru: {
       title: "Открытка для Богдана",
       subtitle: "Подарок, который нужно открыть",
@@ -436,7 +438,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "PDF"],
     repo: "https://github.com/Moty2111/Nika",
     demo: "https://moty2111.github.io/Nika/",
-    image: "assets/shots/nika-card.jpg",
+    image: "assets/shots/nika-main.jpg",
+    gallery: ["assets/shots/nika-main.jpg", "assets/shots/nika-card.jpg"],
     ru: {
       title: "Открытка для мамы",
       subtitle: "Тёплая история в страницах",
@@ -468,7 +471,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "CSS Art"],
     repo: "https://github.com/Moty2111/Pasxa",
     demo: "https://moty2111.github.io/Pasxa/",
-    image: "assets/shots/pasxa-card.jpg",
+    image: "assets/shots/pasxa-main.jpg",
+    gallery: ["assets/shots/pasxa-main.jpg", "assets/shots/pasxa-card.jpg"],
     ru: {
       title: "Пасхальная открытка",
       subtitle: "Всё нарисовано кодом",
@@ -501,6 +505,7 @@ const PROJECTS = [
     repo: "https://github.com/Moty2111/Race",
     demo: "demos/race/",
     image: "assets/shots/race-card.jpg",
+    gallery: ["assets/shots/race-card.jpg", "assets/shots/race.jpg"],
     ru: {
       title: "3D Гонки",
       subtitle: "Кольцевая трасса в браузере",
@@ -532,7 +537,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript", "3D CSS"],
     repo: "https://github.com/Moty2111/8marta",
     demo: "https://moty2111.github.io/8marta/",
-    image: "assets/shots/8marta-card.jpg",
+    image: "assets/shots/8marta-main.jpg",
+    gallery: ["assets/shots/8marta-main.jpg", "assets/shots/8marta-card.jpg"],
     ru: {
       title: "Живая 3D-открытка к 8 марта",
       subtitle: "Книга, которая перелистывается",
@@ -564,7 +570,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS"],
     repo: "https://github.com/Moty2111/Strityxa",
     demo: "demos/strityxa/",
-    image: "assets/shots/strityxa-card.jpg",
+    image: "assets/shots/strityxa-main.jpg",
+    gallery: ["assets/shots/strityxa-main.jpg", "assets/shots/strityxa-news.jpg", "assets/shots/strityxa-teams.jpg", "assets/shots/strityxa-tournaments.jpg", "assets/shots/strityxa-card.jpg"],
     ru: {
       title: "Футбольный мир",
       subtitle: "Мой первый сайт",
@@ -628,7 +635,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript"],
     repo: "https://github.com/Moty2111/My-sawes",
     demo: "https://moty2111.github.io/My-sawes/",
-    image: "assets/shots/my-sawes-card.jpg",
+    image: "assets/shots/mysawes-main.jpg",
+    gallery: ["assets/shots/mysawes-main.jpg", "assets/shots/my-sawes-card.jpg"],
     ru: {
       title: "BuildPro",
       subtitle: "Магазин стройматериалов",
@@ -692,7 +700,8 @@ const PROJECTS = [
     tags: ["HTML", "CSS", "JavaScript"],
     repo: "https://github.com/Moty2111/Ne-grusty",
     demo: "https://moty2111.github.io/Ne-grusty/",
-    image: "assets/shots/ne-grusty-card.jpg",
+    image: "assets/shots/negrusty-main.jpg",
+    gallery: ["assets/shots/negrusty-main.jpg", "assets/shots/ne-grusty-card.jpg"],
     ru: {
       title: "Для Кати · тихая ночь",
       subtitle: "Открытка-письмо",
